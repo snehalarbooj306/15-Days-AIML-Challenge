@@ -53,6 +53,8 @@ This repo is useful for:
 
 ### ✅ Day 1 — House Price Prediction App
 
+🔗 **Live App:** https://day1-house-price-predictor.streamlit.app
+
 **Features:**
 - User inputs house details
 - ML model predicts price
