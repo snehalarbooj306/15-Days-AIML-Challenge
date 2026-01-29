@@ -4,6 +4,8 @@ This project focuses on predicting the risk of heart disease using patient medic
 The goal is not just to predict, but also to understand **why** the model makes a decision.
 
 ---
+🔗 **Live App:** https://day2-heart-disease-risk.streamlit.app/
+---
 
 ## 🎯 What this project will do
 
