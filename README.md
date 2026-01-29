@@ -6,67 +6,64 @@ B.Tech CSE (AI & ML) Student
 
 ---
 
-## 📌 About This Repository
+## 🎯 About This Challenge
 
-This repository contains **15 real-world AI/ML projects built in 15 days** as a self-learning challenge to improve my skills in:
+This is a personal **15-day AI/ML project challenge** where I build one complete project every day — from data processing to model training to deployment.
+
+The goal is to strengthen my skills in:
 
 - Machine Learning
-- Deep Learning
 - Medical AI
 - Computer Vision
 - NLP
 - Model Deployment
-- UI using Streamlit
+- Building real AI applications
 
-Each project is built as an **end-to-end application**, not just a notebook.
-
-This repo is useful for:
-- Students learning AI/ML
-- Beginners who want practical projects
-- Anyone who wants to understand how ML is used in real applications
+Each project has its **own folder with full explanation and code**.
 
 ---
 
-## 📅 Project Plan
+## 📅 Project Progress
 
-| Day | Project | Domain | Status |
-|------|------------------------------|--------|--------|
-| Day 1 | House Price Prediction App | ML + Deployment | ✅ Done |
-| Day 2 | Heart Disease Risk Prediction | Medical ML | 🔜 |
-| Day 3 | Fake News Detection | NLP | 🔜 |
-| Day 4 | Sentiment Analysis API | NLP + Backend | 🔜 |
-| Day 5 | Stock Price Forecasting | Time Series | 🔜 |
-| Day 6 | ECG Arrhythmia Detection | Signal DL | 🔜 |
-| Day 7 | Skin Disease Classification | Medical CV | 🔜 |
-| Day 8 | Waste Classification (Transfer Learning) | CV | 🔜 |
-| Day 9 | Emotion Detection | CV | 🔜 |
-| Day 10 | Movie Recommendation System | Recommender | 🔜 |
-| Day 11 | Fraud Detection | Anomaly Detection | 🔜 |
-| Day 12 | Medical Report Summarizer | GenAI | 🔜 |
-| Day 13 | Multimodal Risk Prediction | ML Fusion | 🔜 |
-| Day 14 | AutoML Comparison | AutoML | 🔜 |
-| Day 15 | AI Health Dashboard | Full System | 🔜 |
+| Day | Project | Domain | Status | Live App |
+|------|------------------------------|--------|--------|----------|
+| Day 1 | House Price Prediction | ML | ✅ Done | https://day1-house-price-predictor.streamlit.app |
+| Day 2 | Heart Disease Risk Prediction | Medical ML | ✅ Done | https://day2-heart-disease-risk.streamlit.app |
+| Day 3 | Fake News Detection | NLP | 🔜 | — |
+| Day 4 | Sentiment Analysis API | NLP + Backend | 🔜 | — |
+| Day 5 | Stock Price Forecasting | Time Series | 🔜 | — |
+| Day 6 | ECG Arrhythmia Detection | Signal DL | 🔜 | — |
+| Day 7 | Skin Disease Classification | Medical CV | 🔜 | — |
+| Day 8 | Waste Classification | CV | 🔜 | — |
+| Day 9 | Emotion Detection | CV | 🔜 | — |
+| Day10 | Movie Recommendation System | Recommender | 🔜 | — |
+| Day11 | Fraud Detection | Anomaly Detection | 🔜 | — |
+| Day12 | Medical Report Summarizer | GenAI | 🔜 | — |
+| Day13 | Multimodal Risk Prediction | ML Fusion | 🔜 | — |
+| Day14 | AutoML Comparison | AutoML | 🔜 | — |
+| Day15 | AI Health Dashboard | Full System | 🔜 | — |
 
 ---
 
-## 🗂️ Current Projects
+## 📂 Repository Structure
 
-### ✅ Day 1 — House Price Prediction App
+Each project is inside its own folder:
 
-🔗 **Live App:** https://day1-house-price-predictor.streamlit.app
+  Day1_HousePrice/
+  Day2_HeartDisease/
+  Day3_FakeNews/
+...
 
-**Features:**
-- User inputs house details
-- ML model predicts price
-- Price shown in INR ₹
-- Clean pink UI using Streamlit
+Each folder contains:
+- Code
+- Project-specific README
+- Instructions to run
 
-**Tech Used:**
-- Python
-- Scikit-learn
-- Streamlit
+---
 
-**How to Run:**
-```bash
-pip install streamlit scikit-learn numpy joblib
-streamlit run app.py
+## 🌱 Learning in Public
+
+This repository reflects my learning journey.  
+I’m improving every day by building real applications, not just notebooks.
+
+If this repo helps you, feel free to ⭐ star it.
