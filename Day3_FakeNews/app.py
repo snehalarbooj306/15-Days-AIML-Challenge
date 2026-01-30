@@ -35,11 +35,12 @@ def load_or_train():
         model = joblib.load("fake_news_model.pkl")
         vectorizer = joblib.load("tfidf_vectorizer.pkl")
     else:
-        fake_url = "https://raw.githubusercontent.com/lutzhamel/fake-news/master/data/fake.csv"
-        true_url = "https://raw.githubusercontent.com/lutzhamel/fake-news/master/data/true.csv"
-
+        fake_url = "https://huggingface.co/datasets/streamlit/example-fake-news/resolve/main/Fake.csv"
+        true_url = "https://huggingface.co/datasets/streamlit/example-fake-news/resolve/main/True.csv"
+        
         fake_df = pd.read_csv(fake_url)
         true_df = pd.read_csv(true_url)
+
 
         fake_df["label"] = 0
         true_df["label"] = 1
@@ -161,4 +162,5 @@ st.markdown(
     "<div class='watermark'>Snehal — 15 Days AI/ML Challenge</div>",
     unsafe_allow_html=True
 )
+
 
