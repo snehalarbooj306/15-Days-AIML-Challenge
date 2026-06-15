@@ -15,8 +15,12 @@ def clean_text(text):
     return " ".join(w for w in words if w not in stop_words)
 
 # Load trained artifacts
-model = joblib.load("fake_news_model.pkl")
-vectorizer = joblib.load("tfidf_vectorizer.pkl")
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent
+
+model = joblib.load(BASE_DIR / "fake_news_model.pkl")
+vectorizer = joblib.load(BASE_DIR / "tfidf_vectorizer.pkl")
 
 st.set_page_config(page_title="Fake News Detection | Snehal", layout="centered")
 
