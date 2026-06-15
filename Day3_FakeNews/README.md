@@ -1,134 +1,75 @@
-\# 📰 Day 3 – Fake News Detection (NLP)
+# 📰 Day 3 – Fake News Detection (NLP)
 
+## 📌 Overview
 
+This project predicts whether a news article is **Fake** or **Real** using Natural Language Processing (NLP) and Machine Learning.
 
-\## 📌 Overview
+Users can paste a news article into the application and receive a prediction along with a confidence score.
 
-This project detects whether a news article is \*\*Fake\*\* or \*\*Real\*\* using
-
-Natural Language Processing (NLP) and Machine Learning.
-
-
-
-The user pastes a news article, and the system predicts its authenticity
-
-along with confidence.
-
-
-
-This project is part of my \*\*15 Days AI/ML Challenge\*\*.
-
-
+This project was built as part of my **15 Days AI/ML Challenge**.
 
 ---
 
+## 🧠 Workflow
 
+### 1️⃣ Text Preprocessing
 
-\## 🧠 How It Works
+* Converts text to lowercase
+* Removes punctuation and special characters
+* Removes common English stopwords
+* Retains meaningful words for analysis
 
+### 2️⃣ TF-IDF Vectorization
 
+* Converts text into numerical features
+* Assigns higher importance to informative words
+* Reduces the impact of commonly occurring words
 
-\### 1️⃣ Text Preprocessing
+### 3️⃣ Machine Learning Model
 
-\- Converts text to lowercase
+* Algorithm: Logistic Regression
+* Uses TF-IDF features as input
+* Performs binary classification (Fake vs Real)
 
-\- Removes punctuation and numbers
+### 4️⃣ Prediction Logic
 
-\- Removes common stopwords (like \*the, is, and\*)
-
-\- Keeps only meaningful words
-
-
-
-\### 2️⃣ TF-IDF Vectorization
-
-\- Converts text into numerical features
-
-\- Important words get higher weight
-
-\- Common words get lower weight
-
-
-
-\### 3️⃣ Model Training
-
-\- Algorithm: Logistic Regression
-
-\- Trained on a large fake vs real news dataset
-
-\- High accuracy on unseen data
-
-
-
-\### 4️⃣ Prediction Logic
-
-\- If text is too short → marked as \*\*Uncertain\*\*
-
-\- If confidence is low → marked as \*\*Uncertain\*\*
-
-\- Otherwise → classified as \*\*Fake\*\* or \*\*Real\*\*
-
-
+* Detects insufficient input text
+* Handles low-confidence predictions
+* Returns Fake, Real, or Uncertain results
 
 ---
 
+## ✨ Features
 
-
-\## 🖥️ Features
-
-\- Clean and colorful Streamlit UI
-
-\- Confidence-based predictions
-
-\- Handles uncertain inputs gracefully
-
-\- Auto-training in cloud (no dataset upload)
-
-\- Watermark on UI:
-
-&nbsp; \*\*Snehal — 15 Days AI/ML Challenge\*\*
-
-
+* Interactive Streamlit interface
+* NLP-based text classification
+* Confidence score display
+* Graceful handling of uncertain predictions
+* Lightweight deployment
+* Custom project watermark
 
 ---
 
+## 🚀 Tech Stack
 
-
-\## 🚀 Tech Stack
-
-\- Python
-
-\- Scikit-learn
-
-\- NLP (TF-IDF)
-
-\- Streamlit
-
-\- Hugging Face Datasets
-
-
+* Python
+* Scikit-learn
+* TF-IDF Vectorization
+* Logistic Regression
+* Streamlit
+* NLTK
 
 ---
 
+## ⚠️ Disclaimer
 
-
-\## ⚠️ Disclaimer
-
-This project is for \*\*learning purposes only\*\* and should not be used as a
-
-real-world fact-checking system.
-
-
+This project is intended for educational and learning purposes only and should not be used as a substitute for professional fact-checking services.
 
 ---
 
+## 👩‍💻 Author
 
+**Snehal Arbooj**
+B.Tech CSE (AI & ML)
 
-\## 👩‍💻 Author
-
-\*\*Snehal Arbooj\*\*  
-
-B.Tech CSE (AI \& ML)
-
-
-
+**15 Days AI/ML Challenge**
