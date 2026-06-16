@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review Sentiment Analyzer</title>
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎬 Movie Review Sentiment Analyzer</h1>
+
+        <p class="subtitle">
+            TF-IDF + Logistic Regression | Accuracy: 88.93%
+        </p>
+
+        <form method="POST">
+
+            <textarea
+                name="review"
+                placeholder="Enter movie review here..."
+                required>{{ review if review else '' }}</textarea>
+
+            <button type="submit">
+                Analyze Sentiment
+            </button>
+
+        </form>
+
+        {% if result %}
+            <div class="result {{ sentiment_class }}">
+                {{ result }}
+
+                {% if confidence %}
+                    <br>
+                    <span class="confidence">
+                        Confidence: {{ confidence }}%
+                    </span>
+                {% endif %}
+            </div>
+        {% endif %}
+
+        <div class="watermark">
+            Snehal — 15 Days AI/ML Challenge • Day 4
+        </div>
+
+    </div>
+
+</body>
+
+</html>
